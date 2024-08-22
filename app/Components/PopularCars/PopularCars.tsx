@@ -7,7 +7,7 @@ const PopularCars: React.FC = () => {
         <p>Most popular cars</p>
         <div className="cars">
           <div className="mitsubishi">
-            <Image src="/images/car_1.jpg" alt=""/>
+            <Image src="/images/car_1.jpg" alt="" width={360} height={290} />
             <div className="mits-text">
               <h5>Mitsubishi Eclipse</h5>
               <p className="p1">
@@ -23,8 +23,16 @@ const PopularCars: React.FC = () => {
                 src="/icons/features.svg"
                 alt=""
                 className="features-d1"
+                width={300}
+                height={17}
               />
-              <Image src="/icons/features_m.svg" className="features-m1" alt=""/>
+              <Image
+                src="/icons/features_m.svg"
+                className="features-m1"
+                alt=""
+                width={195}
+                height={17}
+              />
               <div className="mits-button">
                 <h6>AED 2700/ Monthly</h6>
                 <button>Book Now</button>
@@ -32,7 +40,7 @@ const PopularCars: React.FC = () => {
             </div>
           </div>
           <div className="jac">
-            <Image src="/images/car_2.jpg" alt=""/>
+            <Image src="/images/car_2.jpg" alt="" width={360} height={290} />
             <div className="jac-text">
               <h5>Jac J7</h5>
               <p className="p2">
@@ -47,11 +55,15 @@ const PopularCars: React.FC = () => {
                 src="/icons/features.svg"
                 alt=""
                 className="features-d2"
+                width={300}
+                height={17}
               />
               <Image
                 src="/icons/features-m2.svg"
                 alt=""
                 className="features-m2"
+                width={195}
+                height={17}
               />
               <div className="mits-button">
                 <h6>AED 2700/ Monthly</h6>

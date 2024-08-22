@@ -25,20 +25,20 @@ const Subscription: React.FC = () => {
               <span id="emailError" className="error2"></span>
             </div>
             <p className="promo-d">
-              Don&apos;t miss out! enter your email and your name, then hit subscribe
-              to unlock a world of special offers and details.
+              Don&apos;t miss out! enter your email and your name, then hit
+              subscribe to unlock a world of special offers and details.
             </p>
             <p className="promo-m">
               Please select the ways you would like to hear from Diamondlease,
-              and confirm that you&apos;re happy for us to store your data in line
-              with our Privacy Policy.
+              and confirm that you&apos;re happy for us to store your data in
+              line with our Privacy Policy.
             </p>
             <button>Subscribe</button>
           </form>
         </div>
         <div className="promo-right">
           <div className="promo-img">
-            <Image src="/icons/phone.svg" alt=""/>
+            <Image src="/icons/phone.svg" alt="" height={417} width={231} />
           </div>
           <div className="promo-text">
             <p>
@@ -54,10 +54,15 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <Image src="/icons/app_tr.svg" alt=""/>
+                <Image src="/icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
-                <Image src="/icons/play_tr.svg" alt=""/>
+                <Image
+                  src="/icons/play_tr.svg"
+                  alt=""
+                  width={103}
+                  height={30}
+                />
               </a>
             </div>
           </div>
@@ -65,10 +70,15 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <Image src="/icons/app_tr.svg" alt=""/>
+                <Image src="/icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
-                <Image src="/icons/play_tr.svg" alt=""/>
+                <Image
+                  src="/icons/play_tr.svg"
+                  alt=""
+                  width={103}
+                  height={30}
+                />
               </a>
             </div>
             <p>

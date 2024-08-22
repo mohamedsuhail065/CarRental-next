@@ -71,6 +71,8 @@ const Banner: React.FC = () => {
                 src={slide.imgSrc}
                 alt={slide.altText}
                 className="summer_promotion_img"
+                width={1312}
+                height={405}
               />
               <div className="text_container_summer">{slide.content}</div>
             </div>

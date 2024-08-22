@@ -40,21 +40,21 @@ const Navbar: React.FC = () => {
     <nav className="nav">
       <div className="header-icons">
         <Link href="https://facebook.com">
-          <Image src="/icons/fb.svg" alt="" />
+          <Image src="/icons/fb.svg" alt="" width={8.8} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="/icons/insta.svg" alt="" />
+          <Image src="/icons/insta.svg" alt="" width={8.8} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="/icons/x.svg" alt="" />
+          <Image src="/icons/x.svg" alt="" width={8.8} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="/icons/linkedin.svg" alt="" />
+          <Image src="/icons/linkedin.svg" alt="" width={8.8} height={15.5} />
         </Link>
       </div>
       <div className="logo-layer">
         <div className="logo">
-          <Image src="/icons/logo.svg" alt="" />
+          <Image src="/icons/logo.svg" alt="" width={354} height={52} />
         </div>
         <div className="hmenu">
           <Image
@@ -62,9 +62,17 @@ const Navbar: React.FC = () => {
             alt=""
             id="menuButton"
             onClick={toggleSidebar}
+            width={24}
+            height={24}
           />
         </div>
-        <Image src="/icons/menu.svg" className="menu" alt=""/>
+        <Image
+          src="/icons/menu.svg"
+          className="menu"
+          alt=""
+          width={24}
+          height={24}
+        />
         <div className="nav-links">
           <ul>
             {links.map((item) => {
@@ -76,7 +84,7 @@ const Navbar: React.FC = () => {
             })}
             <a href="#">
               <li>
-                <Image src="/icons/notific.svg" alt=""/>
+                <Image src="/icons/notific.svg" alt="" height={24} width={24} />
               </li>
             </a>
             <li>
@@ -93,6 +101,8 @@ const Navbar: React.FC = () => {
             alt=""
             id="menu_close"
             onClick={closeSidebar}
+            height={20}
+            width={20}
           />
           <ul>
             {links.map((item) => {
