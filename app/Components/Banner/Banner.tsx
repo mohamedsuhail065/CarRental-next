@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import "./Banner.css";
 
 type Slide = {
@@ -66,7 +67,7 @@ const Banner: React.FC = () => {
         {slides.map((slide, index) => (
           <div className="slide" key={index}>
             <div className="summer_promotion_container">
-              <img
+              <Image
                 src={slide.imgSrc}
                 alt={slide.altText}
                 className="summer_promotion_img"

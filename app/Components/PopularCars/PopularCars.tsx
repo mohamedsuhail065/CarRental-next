@@ -1,5 +1,5 @@
 import "./PopularCars.css";
-
+import Image from "next/image";
 const PopularCars: React.FC = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const PopularCars: React.FC = () => {
         <p>Most popular cars</p>
         <div className="cars">
           <div className="mitsubishi">
-            <img src="/images/car_1.jpg" />
+            <Image src="/images/car_1.jpg" alt=""/>
             <div className="mits-text">
               <h5>Mitsubishi Eclipse</h5>
               <p className="p1">
@@ -19,12 +19,12 @@ const PopularCars: React.FC = () => {
                 With its aerodynamic curves and bold lines, this car is a
                 standout on the road...
               </p>
-              <img
+              <Image
                 src="/icons/features.svg"
                 alt=""
                 className="features-d1"
               />
-              <img src="/icons/features_m.svg" className="features-m1" />
+              <Image src="/icons/features_m.svg" className="features-m1" alt=""/>
               <div className="mits-button">
                 <h6>AED 2700/ Monthly</h6>
                 <button>Book Now</button>
@@ -32,7 +32,7 @@ const PopularCars: React.FC = () => {
             </div>
           </div>
           <div className="jac">
-            <img src="/images/car_2.jpg" />
+            <Image src="/images/car_2.jpg" alt=""/>
             <div className="jac-text">
               <h5>Jac J7</h5>
               <p className="p2">
@@ -43,12 +43,12 @@ const PopularCars: React.FC = () => {
                 With its aerodynamic curves and bold lines, this car is a
                 standout on the road...
               </p>
-              <img
+              <Image
                 src="/icons/features.svg"
                 alt=""
                 className="features-d2"
               />
-              <img
+              <Image
                 src="/icons/features-m2.svg"
                 alt=""
                 className="features-m2"

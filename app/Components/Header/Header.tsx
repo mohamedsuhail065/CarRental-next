@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
@@ -22,10 +23,10 @@ const Header: React.FC = () => {
           <div className="header-input">
             <div className="input-wrapper">
               <div className="map-img">
-                <img src="/icons/re_map.svg" />
+                <Image src="/icons/re_map.svg" alt=""/>
               </div>
               <div className="arrow">
-                <img src="/icons/arrow_red.svg" />
+                <Image src="/icons/arrow_red.svg" alt=""/>
               </div>
               <select className="custom-select">
                 <option value="alquoz">Al Quoz</option>
@@ -43,7 +44,7 @@ const Header: React.FC = () => {
                   value="2024-08-15T09:00"
                 />
                 <div className="cal-img">
-                  <img src="/icons/red_calender.svg" alt="Calendar" />
+                  <Image src="/icons/red_calender.svg" alt="Calendar" />
                 </div>
               </div>
 
@@ -57,11 +58,11 @@ const Header: React.FC = () => {
                   value="2024-08-15T09:00"
                 />
                 <div className="cal-img">
-                  <img src="/icons/red_calender.svg" alt="Calendar" />
+                  <Image src="/icons/red_calender.svg" alt="Calendar" />
                 </div>
               </div>
             </div>
-            <img src="/icons/search.svg" alt="" />
+            <Image src="/icons/search.svg" alt="" />
             <div className="line"></div>
             <button>Quick Book</button>
           </div>
@@ -69,19 +70,19 @@ const Header: React.FC = () => {
             <p>Download our App for easy accessibility anytime, anywhere!</p>
             <div>
               <a href="https://play.google.com/store">
-                <img src="/icons/app.svg" />
+                <Image src="/icons/app.svg" alt=""/>
               </a>
               <a href="apps.apple.com">
-                <img src="/icons/play.svg" />
+                <Image src="/icons/play.svg" alt=""/>
               </a>
             </div>
           </div>
         </div>
         <div className="icons-right">
           <a href="tel: 9746381958">
-            <img src="/icons/r_phone.svg" />
+            <Image src="/icons/r_phone.svg" alt=""/>
           </a>
-          <img src="/icons/24x7.svg" alt="" className="twenty_four" />
+          <Image src="/icons/24x7.svg" alt="" className="twenty_four" />
         </div>
       </div>
     

@@ -1,5 +1,5 @@
 import "./Step.css";
-
+import Image from "next/image";
 const Step: React.FC = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Step: React.FC = () => {
           <div className="rentStepCols">
             <h3 className="rentSteph3">01</h3>
             <div className="rentStepSubdiv">
-              <img src="/icons/step1.svg" alt="" />
+              <Image src="/icons/step1.svg" alt="" />
               <p className="rentDivPara">
                 Select the location. Browse through our available options and
                 find the perfect car to suit your needs
@@ -20,7 +20,7 @@ const Step: React.FC = () => {
           <div className="rentStepCols">
             <h3 className="rentSteph3">02</h3>
             <div className="rentStepSubdiv">
-              <img src="/icons/step2.svg" alt="" />
+              <Image src="/icons/step2.svg" alt="" />
               <p className="rentDivPara">
                 Choose your desired Pick-Up date and time.
               </p>
@@ -30,7 +30,7 @@ const Step: React.FC = () => {
           <div className="rentStepCols">
             <h3 className="rentSteph3">03</h3>
             <div className="rentStepSubdiv">
-              <img src="/icons/step3.svg" alt="" />
+              <Image src="/icons/step3.svg" alt="" />
               <p className="rentDivPara">
                 Make payment and book the car. Select an option to either have
                 the car delivered to your location or pick it up directly from

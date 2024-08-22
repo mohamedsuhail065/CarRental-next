@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import "./Navbar.css";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -40,38 +40,43 @@ const Navbar: React.FC = () => {
     <nav className="nav">
       <div className="header-icons">
         <Link href="https://facebook.com">
-          <img src="/icons/fb.svg" alt="" />
+          <Image src="/icons/fb.svg" alt="" />
         </Link>
         <Link href="https://facebook.com">
-          <img src="/icons/insta.svg" alt="" />
+          <Image src="/icons/insta.svg" alt="" />
         </Link>
         <Link href="https://facebook.com">
-          <img src="/icons/x.svg" alt="" />
+          <Image src="/icons/x.svg" alt="" />
         </Link>
         <Link href="https://facebook.com">
-          <img src="/icons/linkedin.svg" alt="" />
+          <Image src="/icons/linkedin.svg" alt="" />
         </Link>
       </div>
       <div className="logo-layer">
         <div className="logo">
-          <img src="/icons/logo.svg" alt="" />
+          <Image src="/icons/logo.svg" alt="" />
         </div>
         <div className="hmenu">
-          <img src="/icons/charm_menu-hamburger.svg" alt="" id="menuButton" onClick={toggleSidebar}/>
+          <Image
+            src="/icons/charm_menu-hamburger.svg"
+            alt=""
+            id="menuButton"
+            onClick={toggleSidebar}
+          />
         </div>
-        <img src="/icons/menu.svg" className="menu" />
+        <Image src="/icons/menu.svg" className="menu" alt=""/>
         <div className="nav-links">
           <ul>
             {links.map((item) => {
               return (
-                <a href={item.link}>
-                  <li key={item.name}>{item.name}</li>
+                <a href={item.link} key={item.name}>
+                  <li>{item.name}</li>
                 </a>
               );
             })}
             <a href="#">
               <li>
-                <img src="/icons/notific.svg" />
+                <Image src="/icons/notific.svg" alt=""/>
               </li>
             </a>
             <li>
@@ -83,12 +88,17 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className={`sidebar ${sidebar ? "active" : ""}`}>
-          <img src="/icons/menu_close.svg" alt="" id="menu_close" onClick={closeSidebar}/>
+          <Image
+            src="/icons/menu_close.svg"
+            alt=""
+            id="menu_close"
+            onClick={closeSidebar}
+          />
           <ul>
             {links.map((item) => {
               return (
-                <a href={item.link}>
-                  <li key={item.name}>{item.name}</li>
+                <a href={item.link} key={item.name}>
+                  <li>{item.name}</li>
                 </a>
               );
             })}

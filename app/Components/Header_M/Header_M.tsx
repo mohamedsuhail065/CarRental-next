@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./Header_M.css";
+import Image from "next/image";
 
 const HeaderMobile: React.FC = () => {
   const [isInput, setIsInput] = useState<boolean>(false);
@@ -44,15 +45,15 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs1" && (
             <div className="inputs">
-              <img src="/icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="/icons/re_map.svg" className="red_cal" alt="Map" />
               <input type="text" placeholder="Pick-Up Location" />
-              <img
+              <Image
                 src="/icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />
               <input className="date-ico" type="datetime-local" />
-              <img
+              <Image
                 src="/icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
@@ -64,25 +65,25 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs2" && (
             <div className="inputs">
-              <img src="/icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="/icons/re_map.svg" className="red_cal" alt="Map" />
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Pick-Up Location"
               />
-              <img src="/icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="/icons/re_map.svg" className="red_cal" alt="Map" />
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Drop-Off Location"
               />
-              <img
+              <Image
                 src="/icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />
               <input className="date-ico" type="datetime-local" />
-              <img
+              <Image
                 src="/icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"

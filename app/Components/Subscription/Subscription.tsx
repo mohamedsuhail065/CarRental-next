@@ -1,6 +1,6 @@
 import React from "react";
 import "./Subscription.css";
-
+import Image from "next/image";
 const Subscription: React.FC = () => {
   return (
     <>
@@ -25,12 +25,12 @@ const Subscription: React.FC = () => {
               <span id="emailError" className="error2"></span>
             </div>
             <p className="promo-d">
-              Don't miss out! enter your email and your name, then hit subscribe
+              Don&apos;t miss out! enter your email and your name, then hit subscribe
               to unlock a world of special offers and details.
             </p>
             <p className="promo-m">
               Please select the ways you would like to hear from Diamondlease,
-              and confirm that you’re happy for us to store your data in line
+              and confirm that you&apos;re happy for us to store your data in line
               with our Privacy Policy.
             </p>
             <button>Subscribe</button>
@@ -38,7 +38,7 @@ const Subscription: React.FC = () => {
         </div>
         <div className="promo-right">
           <div className="promo-img">
-            <img src="/icons/phone.svg" />
+            <Image src="/icons/phone.svg" alt=""/>
           </div>
           <div className="promo-text">
             <p>
@@ -54,10 +54,10 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <img src="/icons/app_tr.svg" />
+                <Image src="/icons/app_tr.svg" alt=""/>
               </a>
               <a href="https://play.google.com/store">
-                <img src="/icons/play_tr.svg" />
+                <Image src="/icons/play_tr.svg" alt=""/>
               </a>
             </div>
           </div>
@@ -65,10 +65,10 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <img src="/icons/app_tr.svg" />
+                <Image src="/icons/app_tr.svg" alt=""/>
               </a>
               <a href="https://play.google.com/store">
-                <img src="/icons/play_tr.svg" />
+                <Image src="/icons/play_tr.svg" alt=""/>
               </a>
             </div>
             <p>
