@@ -1,0 +1,116 @@
+.res-buttons {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.res-buttons .b1 {
+  background-color: #e21e26;
+  color: #ffffff;
+  height: 38px;
+  gap: 8px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  padding: 0 37px;
+  font-family: "Poppins";
+}
+
+.res-buttons .b2 {
+  height: 38px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #e21e26;
+  background-color: #ffffff;
+  color: #e21e26;
+  padding: 0 37px;
+  font-family: "Poppins";
+}
+
+.mobile-inputs {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.input-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.input-nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  list-style: none;
+  padding: 0;
+}
+
+.input-nav ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+.mob-vehicle-select {
+  border: none;
+}
+
+.inputs {
+    display: flex;
+  flex-direction: column !important ;
+  align-items: center !important ;
+}
+
+.input-btn {
+  margin-left: 4vw;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.input-btn button {
+  width: 48%;
+  background-color: white;
+  color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  border: 2px solid #e21e26;
+  text-align: center;
+}
+
+.input-btn button:hover {
+  background-color: #e21e26;
+  color: #f8f8f8;
+}
+
+.inputs input {
+  background-color: #f6f7f9;
+  border: none;
+  height: 6vh;
+  margin-bottom: 1.5rem;
+  width: 60%;
+  padding: 0 0 0 28px;
+}
+
+.red_cal {
+  position: relative;
+  top: 27px;
+  right: 154px;
+}
+
+.b3 {
+  background-color: #e21e26;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
