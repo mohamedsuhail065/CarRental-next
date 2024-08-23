@@ -22,7 +22,7 @@ export default function Home() {
     };
   },[]);
   return (
-    <main>
+    <>
       <Header/>
       {isMobile?<HeaderMobile/>:""}
       <Banner/>
@@ -30,6 +30,6 @@ export default function Home() {
       <Subscription/>
       <Step/>
       <Location/>
-    </main>
+    </>
   );
 }

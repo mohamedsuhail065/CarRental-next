@@ -23,10 +23,10 @@ const Header: React.FC = () => {
           <div className="header-input">
             <div className="input-wrapper">
               <div className="map-img">
-                <Image src="/icons/re_map.svg" alt="" width={9} height={12}/>
+                <Image src="./icons/re_map.svg" alt="" width={9} height={12}/>
               </div>
               <div className="arrow">
-                <Image src="/icons/arrow_red.svg" alt="" width={9} height={12}/>
+                <Image src="./icons/arrow_red.svg" alt="" width={9} height={12}/>
               </div>
               <select className="custom-select">
                 <option value="alquoz">Al Quoz</option>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                   value="2024-08-15T09:00"
                 />
                 <div className="cal-img">
-                  <Image src="/icons/red_calender.svg" alt="Calendar" width={9} height={12}/>
+                  <Image src="./icons/red_calender.svg" alt="Calendar" width={9} height={12}/>
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
           <a href="tel: 9746381958">
             <Image src="/icons/r_phone.svg" alt="" width={48} height={45}/>
           </a>
-          <Image src="/icons/24x7.svg" alt="" className="twenty_four" width={38} height={38}/>
+          <Image src="/icons/24x7.svg" alt="" className="twenty_four"/>
         </div>
       </div>
     
