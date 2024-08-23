@@ -20,14 +20,14 @@ const PopularCars: React.FC = () => {
                 standout on the road...
               </p>
               <Image
-                src="/icons/features.svg"
+                src="./icons/features.svg"
                 alt=""
                 className="features-d1"
                 width={300}
                 height={17}
               />
               <Image
-                src="/icons/features_m.svg"
+                src="./icons/features_m.svg"
                 className="features-m1"
                 alt=""
                 width={195}
@@ -52,14 +52,14 @@ const PopularCars: React.FC = () => {
                 standout on the road...
               </p>
               <Image
-                src="/icons/features.svg"
+                src="./icons/features.svg"
                 alt=""
                 className="features-d2"
                 width={300}
                 height={17}
               />
               <Image
-                src="/icons/features-m2.svg"
+                src="./icons/features-m2.svg"
                 alt=""
                 className="features-m2"
                 width={195}

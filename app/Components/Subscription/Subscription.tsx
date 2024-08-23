@@ -38,7 +38,7 @@ const Subscription: React.FC = () => {
         </div>
         <div className="promo-right">
           <div className="promo-img">
-            <Image src="/icons/phone.svg" alt="" height={417} width={231} />
+            <Image src="./icons/phone.svg" alt="" height={417} width={231} />
           </div>
           <div className="promo-text">
             <p>
@@ -54,11 +54,11 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <Image src="/icons/app_tr.svg" alt="" width={103} height={30} />
+                <Image src="./icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
                 <Image
-                  src="/icons/play_tr.svg"
+                  src="./icons/play_tr.svg"
                   alt=""
                   width={103}
                   height={30}
@@ -70,11 +70,11 @@ const Subscription: React.FC = () => {
             <span>Get in on</span>
             <div className="promor-img">
               <a href="apps.apple.com">
-                <Image src="/icons/app_tr.svg" alt="" width={103} height={30} />
+                <Image src="./icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
                 <Image
-                  src="/icons/play_tr.svg"
+                  src="./icons/play_tr.svg"
                   alt=""
                   width={103}
                   height={30}
