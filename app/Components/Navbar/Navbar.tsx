@@ -40,25 +40,25 @@ const Navbar: React.FC = () => {
     <nav className="nav">
       <div className="header-icons">
         <Link href="https://facebook.com">
-          <Image src="./icons/fb.svg" alt="" width={8.8} height={15.5} />
+          <Image src="icons/fb.svg" alt="" width={8.8} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="./icons/insta.svg" alt="" width={8.8} height={15.5} />
+          <Image src="icons/insta.svg" alt="" width={14} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="./icons/x.svg" alt="" width={8.8} height={15.5} />
+          <Image src="icons/x.svg" alt="" width={14} height={15.5} />
         </Link>
         <Link href="https://facebook.com">
-          <Image src="./icons/linkedin.svg" alt="" width={8.8} height={15.5} />
+          <Image src="icons/linkedin.svg" alt="" width={14} height={15.5} />
         </Link>
       </div>
       <div className="logo-layer">
         <div className="logo">
-          <Image src="./icons/logo.svg" alt="" width={354} height={52} />
+          <Image src="icons/logo.svg" alt="" width={354} height={52} />
         </div>
         <div className="hmenu">
           <Image
-            src="./icons/charm_menu-hamburger.svg"
+            src="icons/charm_menu-hamburger.svg"
             alt=""
             id="menuButton"
             onClick={toggleSidebar}
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           />
         </div>
         <Image
-          src="./icons/menu.svg"
+          src="icons/menu.svg"
           className="menu"
           alt=""
           width={24}
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
             })}
             <a href="#">
               <li>
-                <Image src="./icons/notific.svg" alt="" height={24} width={24} />
+                <Image src="icons/notific.svg" alt="" height={24} width={24} />
               </li>
             </a>
             <li>
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className={`sidebar ${sidebar ? "active" : ""}`}>
           <Image
-            src="./icons/menu_close.svg"
+            src="icons/menu_close.svg"
             alt=""
             id="menu_close"
             onClick={closeSidebar}

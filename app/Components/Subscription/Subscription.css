@@ -3,6 +3,7 @@
   margin-top: 40px;
   display: flex;
   gap: 100px;
+  margin-right: 64px;
 }
 
 .promo-left {
@@ -156,10 +157,10 @@
 }
 
 @media (max-width: 768px) {
-.promo-right{
-    width: 96%;
-}
 
+  .promo{
+overflow-x: hidden;
+  }
   .promo-text {
     display: none;
   }

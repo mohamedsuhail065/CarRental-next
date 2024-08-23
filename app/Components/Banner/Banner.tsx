@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
 
   const slides: Slide[] = [
     {
-        imgSrc: "/images/banner.jpg",
+        imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
       ),
     },
     {
-        imgSrc: "/images/banner.jpg",
+        imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
@@ -37,7 +37,7 @@ const Banner: React.FC = () => {
       ),
     },
     {
-        imgSrc: "/images/banner.jpg",
+        imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
@@ -67,7 +67,7 @@ const Banner: React.FC = () => {
         {slides.map((slide, index) => (
           <div className="slide" key={index}>
             <div className="summer_promotion_container">
-              <Image
+              <img
                 src={slide.imgSrc}
                 alt={slide.altText}
                 className="summer_promotion_img"

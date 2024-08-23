@@ -45,16 +45,16 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs1" && (
             <div className="inputs">
-              <Image src="./icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
               <input type="text" placeholder="Pick-Up Location" />
               <Image
-                src="./icons/red_calender.svg"
+                src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />
               <input className="date-ico" type="datetime-local" />
               <Image
-                src="./icons/red_calender.svg"
+                src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />
@@ -65,26 +65,26 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs2" && (
             <div className="inputs">
-              <Image src="./icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Pick-Up Location"
               />
-              <Image src="./icons/re_map.svg" className="red_cal" alt="Map" />
+              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Drop-Off Location"
               />
               <Image
-                src="./icons/red_calender.svg"
+                src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />
               <input className="date-ico" type="datetime-local" />
               <Image
-                src="./icons/red_calender.svg"
+                src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
               />

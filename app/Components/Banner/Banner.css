@@ -24,6 +24,7 @@
 .summer_promotion_img {
   width: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .text_container_summer {
@@ -83,9 +84,6 @@
 }
 
 @media (max-width: 768px) {
-.carousel{
-  width: 106%;
-}
 
   .summer_content_para {
     height: 31.27px;

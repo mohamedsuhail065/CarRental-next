@@ -1,0 +1,273 @@
+.footer {
+  height: 250px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 119px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left img {
+  width: 56.75px;
+  height: 66px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.footer-left p {
+  height: 36px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+
+
+.footer-center ul {
+  display: flex;
+  gap: 20px;
+  width: 624px;
+}
+
+.footer-center li {
+  list-style: none;
+  height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.footer-right p {
+  margin-top: 40px;
+  height: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+}
+
+.f-icons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.f-icons img {
+  width: 16.59px;
+  height: 16.59px;
+  padding: 2.46px 0px 2.46px 0px;
+}
+
+.f-line {
+  border-bottom: 24px;
+  border: 0.5px solid white;
+  height: 0px;
+  opacity: 0.5;
+}
+
+.cr {
+  height: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.footer-m {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+
+  .footer-m {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .footer-top {
+    background-color: #f6f7f9;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .ft-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ft-logo {
+    width: 113px;
+    height: 46px;
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+
+  .ft-social {
+    width: 141.27px;
+    height: 16.98px;
+    margin-top: 28px;
+    margin-right: 16px;
+  }
+
+  .ft-2 {
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .ft-2 ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 27px;
+    justify-content: center;
+    margin-right: 36px;
+  }
+
+  .ft-3 {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .ft-3 ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 35px;
+    justify-content: center;
+    margin-right: 36px;
+  }
+
+  .ft-4 {
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .ft-4 ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 41px;
+    justify-content: center;
+    margin-right: 36px;
+  }
+
+  .footer-down {
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .fd-1 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .fd-2 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .fd-2 ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    justify-content: center;
+    width: 76%;
+  }
+
+  .fd-3 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    letter-spacing: -0.035em;
+    text-align: center;
+  }
+
+  .fd-3 ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    justify-content: center;
+    width: 76%;
+  }
+
+  .fd-4 img {
+    width: 58.82px;
+    height: 26.99px;
+    border-radius: 3.86px;
+  }
+
+  .fd-4 {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f-line {
+    margin-top: 22px;
+    border: 0.1px solid white;
+    opacity: 0.3;
+    width: 100%;
+  }
+
+  .cr {
+    width: 100%;
+    height: 17px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+}
