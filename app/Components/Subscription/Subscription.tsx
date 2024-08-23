@@ -1,7 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Subscription.css";
 import Image from "next/image";
 const Subscription: React.FC = () => {
+  type objData = {
+    name: string;
+    email: string;
+    phone: string;
+  };
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const regex = /^\d{10}$/;
+
+  const [data, setData] = useState<objData>({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  const [error, setError] = useState<string>("");
+  const [phoneError, setPhoneError] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+
+    if (data.name === "" || data.email === "") {
+      setError("Fields must not be empty");
+    } else if (name === "email" && !emailRegex.test(value)) {
+      setError("Invalid email format");
+    } else {
+      setError("");
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (data.name === "" || data.email === "") {
+      setError("Fields must not be empty");
+    } else {
+      setError("");
+      alert("Subscribed");
+    }
+  };
+
+  const phoneSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (data.phone === "") {
+      setPhoneError("Field is Empty");
+    } else if (!regex.test(data.phone)) {
+      setPhoneError("Should include 10 numbers");
+    } else {
+      setError("");
+      alert("Link sent");
+    }
+  };
+
   return (
     <>
       <div className="promo">
@@ -14,16 +67,19 @@ const Subscription: React.FC = () => {
                 name="name"
                 placeholder="Name"
                 className="input1"
+                onChange={handleChange}
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Email"
                 className="input2"
+                onChange={handleChange}
               />
-              <span id="nameError" className="error1"></span>
-              <span id="emailError" className="error2"></span>
             </div>
+            <span id="nameError" className="error1">
+              {error}
+            </span>
             <p className="promo-d">
               Don&apos;t miss out! enter your email and your name, then hit
               subscribe to unlock a world of special offers and details.
@@ -33,7 +89,7 @@ const Subscription: React.FC = () => {
               and confirm that you&apos;re happy for us to store your data in
               line with our Privacy Policy.
             </p>
-            <button>Subscribe</button>
+            <button onClick={handleSubmit}>Subscribe</button>
           </form>
         </div>
         <div className="promo-right">
@@ -46,9 +102,18 @@ const Subscription: React.FC = () => {
               app
             </p>
             <form id="form2">
-              <input type="tel" name="phone" placeholder="Enter Phone Number" />
-              <span id="phoneError" className="error3"></span>
-              <button type="submit">Get the link</button>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter Phone Number"
+                onChange={handleChange}
+              />
+              <span id="phoneError" className="error3">
+                {phoneError}
+              </span>
+              <button type="submit" onClick={phoneSubmit}>
+                Get the link
+              </button>
             </form>
 
             <span>Get in on</span>
@@ -57,12 +122,7 @@ const Subscription: React.FC = () => {
                 <Image src="icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
-                <Image
-                  src="icons/play_tr.svg"
-                  alt=""
-                  width={103}
-                  height={30}
-                />
+                <Image src="icons/play_tr.svg" alt="" width={103} height={30} />
               </a>
             </div>
           </div>
@@ -73,12 +133,7 @@ const Subscription: React.FC = () => {
                 <Image src="icons/app_tr.svg" alt="" width={103} height={30} />
               </a>
               <a href="https://play.google.com/store">
-                <Image
-                  src="icons/play_tr.svg"
-                  alt=""
-                  width={103}
-                  height={30}
-                />
+                <Image src="icons/play_tr.svg" alt="" width={103} height={30} />
               </a>
             </div>
             <p>
@@ -87,7 +142,7 @@ const Subscription: React.FC = () => {
             </p>
             <div>
               <input type="tel" name="phone" placeholder="Enter Phone Number" />
-              <button>Get the link</button>
+              <button onSubmit={phoneSubmit}>Get the link</button>
             </div>
           </div>
         </div>

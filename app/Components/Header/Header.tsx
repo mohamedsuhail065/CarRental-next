@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Header.css";
 import Image from "next/image";
 
 const Header: React.FC = () => {
+  const dateInput1Ref = useRef<HTMLInputElement>(null);
+  const dateInput2Ref = useRef<HTMLInputElement>(null);
+
+  const handleCalImgClick = (inputRef: React.RefObject<HTMLInputElement>) => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+      if (typeof inputRef.current.showPicker === "function") {
+        inputRef.current.showPicker();
+      }
+    }
+  };
+
   return (
     <>
       <div className="layer">
@@ -10,7 +22,7 @@ const Header: React.FC = () => {
           <div className="header-nav">
             <ul>
               <li>Same as Pick-Up</li>
-              <li>Diffrent Drop-Off</li>
+              <li>Different Drop-Off</li>
               <li>
                 <select className="vehicle-select" name="" id="">
                   <option value="car">Select Vehicle Type</option>
@@ -23,10 +35,10 @@ const Header: React.FC = () => {
           <div className="header-input">
             <div className="input-wrapper">
               <div className="map-img">
-                <Image src="icons/re_map.svg" alt="" width={9} height={12}/>
+                <Image src="icons/re_map.svg" alt="" width={9} height={12} />
               </div>
               <div className="arrow">
-                <Image src="icons/arrow_red.svg" alt="" width={9} height={12}/>
+                <Image src="icons/arrow_red.svg" alt="" width={9} height={12} />
               </div>
               <select className="custom-select">
                 <option value="alquoz">Al Quoz</option>
@@ -38,13 +50,21 @@ const Header: React.FC = () => {
                 <input
                   type="datetime-local"
                   id="appointment1"
-                  name="appointmen"
+                  name="appointment"
                   min="2024-08-15T08:00"
-                  max="2024-08-15T17:00"
-                  value="2024-08-15T09:00"
+                  max="2024-08-30T17:00"
+                  ref={dateInput1Ref}
                 />
-                <div className="cal-img">
-                  <Image src="icons/red_calender.svg" alt="Calendar" width={9} height={12}/>
+                <div
+                  className="cal-img"
+                  onClick={() => handleCalImgClick(dateInput1Ref)}
+                >
+                  <Image
+                    src="icons/red_calender.svg"
+                    alt="Calendar"
+                    width={9}
+                    height={12}
+                  />
                 </div>
               </div>
 
@@ -55,14 +75,22 @@ const Header: React.FC = () => {
                   name="appointment"
                   min="2024-08-15T08:00"
                   max="2024-10-15T17:00"
-                  value="2024-08-15T09:00"
+                  ref={dateInput2Ref}
                 />
-                <div className="cal-img">
-                  <Image src="icons/red_calender.svg" alt="Calendar" width={9} height={12}/>
+                <div
+                  className="cal-img"
+                  onClick={() => handleCalImgClick(dateInput2Ref)}
+                >
+                  <Image
+                    src="icons/red_calender.svg"
+                    alt="Calendar"
+                    width={9}
+                    height={12}
+                  />
                 </div>
               </div>
             </div>
-            <Image src="icons/search.svg" alt=""  width={64} height={42}/>
+            <Image src="icons/search.svg" alt="" width={64} height={42} />
             <div className="line"></div>
             <button>Quick Book</button>
           </div>
@@ -70,22 +98,27 @@ const Header: React.FC = () => {
             <p>Download our App for easy accessibility anytime, anywhere!</p>
             <div>
               <a href="https://play.google.com/store">
-                <Image src="icons/app.svg" alt="" width={109} height={32}/>
+                <Image src="icons/app.svg" alt="" width={109} height={32} />
               </a>
               <a href="apps.apple.com">
-                <Image src="icons/play.svg" alt="" width={109} height={32}/>
+                <Image src="icons/play.svg" alt="" width={109} height={32} />
               </a>
             </div>
           </div>
         </div>
         <div className="icons-right">
           <a href="tel: 9746381958">
-            <Image src="icons/r_phone.svg" alt="" width={48} height={45}/>
+            <Image src="icons/r_phone.svg" alt="" width={48} height={45} />
           </a>
-          <Image src="icons/24x7.svg" alt="" className="twenty_four"  width={48} height={45}/>
+          <Image
+            src="icons/24x7.svg"
+            alt=""
+            className="twenty_four"
+            width={48}
+            height={45}
+          />
         </div>
       </div>
-    
     </>
   );
 };

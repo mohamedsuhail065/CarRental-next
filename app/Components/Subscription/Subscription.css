@@ -74,7 +74,7 @@
 }
 
 .error3 {
-  color: #ffffff;
+  color: #000000 !important; 
   font-size: 14px;
 }
 
@@ -154,6 +154,11 @@
 
 .promo-text-m {
   display: none;
+}
+
+#form2{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
