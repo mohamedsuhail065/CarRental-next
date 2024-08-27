@@ -45,19 +45,29 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs1" && (
             <div className="inputs">
-              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
+              {/* <Image
+                src="icons/re_map.svg"
+                className="red_cal"
+                alt="Map"
+                width={9}
+                height={12}
+              /> */}
               <input type="text" placeholder="Pick-Up Location" />
-              <Image
+              {/* <Image
                 src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
-              />
+                width={9}
+                height={12}
+              /> */}
               <input className="date-ico" type="datetime-local" />
-              <Image
+              {/* <Image
                 src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
-              />
+                width={9}
+                height={12}
+              /> */}
               <input className="date-ico" type="datetime-local" />
               <button className="b3">Search</button>
             </div>
@@ -65,29 +75,47 @@ const HeaderMobile: React.FC = () => {
 
           {input === "inputs2" && (
             <div className="inputs">
-              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
+              {/* <Image
+                src="icons/re_map.svg"
+                className="red_cal"
+                alt="Map"
+                width={9}
+                height={12}
+              /> */}
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Pick-Up Location"
               />
-              <Image src="icons/re_map.svg" className="red_cal" alt="Map" />
+              {/* <Image
+                src="icons/re_map.svg"
+                className="red_cal"
+                alt="Map"
+                width={9}
+                height={12}
+              /> */}
               <input
                 className="loc-ico"
                 type="text"
                 placeholder="Drop-Off Location"
+                width={9}
+                height={12}
               />
-              <Image
+              {/* <Image
                 src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
-              />
+                width={9}
+                height={12}
+              /> */}
               <input className="date-ico" type="datetime-local" />
-              <Image
+              {/* <Image
                 src="icons/red_calender.svg"
                 alt="Calendar"
                 className="red_cal"
-              />
+                width={9}
+                height={12}
+              /> */}
               <input className="date-ico" type="datetime-local" />
               <button className="b3">Search</button>
             </div>

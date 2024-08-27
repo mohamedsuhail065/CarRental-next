@@ -56,11 +56,11 @@
 }
 
 @media (max-width: 768px) {
-#rentSteps{
-    margin-left:16px ;
+  #rentSteps {
+    margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 50px;
-}
+  }
 
   #rentStepsHeading {
     font-family: Poppins;
@@ -68,6 +68,19 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-   
+  }
+
+  .rentStepCols {
+    width: 274px;
+  }
+
+  .rentSteph3 {
+    margin-left: 115px;
+    margin-right: 188px;
+  }
+
+  .rentStepSubdiv {
+    width: 273px;
+    height: 164px;
   }
 }
