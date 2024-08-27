@@ -11,44 +11,54 @@ type Slide = {
 const Banner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //array for slide
+
   const slides: Slide[] = [
     {
-        imgSrc: "images/banner.jpg",
+      imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
-           <p className="summer_content_para">
-          Recieve guarnteed <button className="green_para">GIFT VOUCHER</button><br />
-          on a monthly hire or lease
-        </p>
+          <p className="summer_content_para">
+            Recieve guarnteed{" "}
+            <button className="green_para">GIFT VOUCHER</button>
+            <br />
+            on a monthly hire or lease
+          </p>
         </>
       ),
     },
     {
-        imgSrc: "images/banner.jpg",
+      imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
-           <p className="summer_content_para">
-          Recieve guarnteed <button className="green_para">GIFT VOUCHER</button><br />
-          on a monthly hire or lease
-        </p>
+          <p className="summer_content_para">
+            Recieve guarnteed{" "}
+            <button className="green_para">GIFT VOUCHER</button>
+            <br />
+            on a monthly hire or lease
+          </p>
         </>
       ),
     },
     {
-        imgSrc: "images/banner.jpg",
+      imgSrc: "images/banner.jpg",
       altText: "summer_promotion_img",
       content: (
         <>
-           <p className="summer_content_para">
-          Recieve guarnteed <button className="green_para">GIFT VOUCHER</button><br />
-          on a monthly hire or lease
-        </p>
+          <p className="summer_content_para">
+            Recieve guarnteed{" "}
+            <button className="green_para">GIFT VOUCHER</button>
+            <br />
+            on a monthly hire or lease
+          </p>
         </>
       ),
     },
   ];
+
+  //automatic sliding for 3sec
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,7 +66,6 @@ const Banner: React.FC = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [slides.length]);
-
 
   return (
     <div className="carousel">

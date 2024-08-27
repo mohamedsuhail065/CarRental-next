@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
+  //sidebar
   const [sidebar, setSidebar] = useState<boolean>(false);
   const toggleSidebar = () => {
     setSidebar(!sidebar);

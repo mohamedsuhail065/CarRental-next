@@ -8,12 +8,14 @@ const Faq: React.FC = () => {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   const toggleButton = (id: number) => {
+    //opening the question
     setActiveId(activeId === id ? null : id);
   };
 
-  const closeToggle=()=>{
-    setActiveId(null)
-  }
+  const closeToggle = () => {
+    //closing the answer
+    setActiveId(null);
+  };
 
   const question = [
     {
@@ -55,30 +57,24 @@ const Faq: React.FC = () => {
         {question.map((item) => (
           <div className="faq-question" key={item.id}>
             <div className="icons">
-                <Image
-                  src="icons/open.svg"
-                  className={activeId === item.id ? "hidden" : "open"}
-                  alt="open icon"
-                  height={24}
-                  width={24}
-                  onClick={() => toggleButton(item.id)}
-                />
-                <Image
-                  src="icons/close.svg"
-                  className={activeId === item.id ? "close" : "hidden"}
-                  alt="close icon"
-                  height={24}
-                  width={24}
-                  onClick={closeToggle}
-                />
-              </div>
-            <div
-              className="question-header"
-              
-            >
-              {item.question}
-              
+              <Image
+                src="icons/open.svg"
+                className={activeId === item.id ? "hidden" : "open"}
+                alt="open icon"
+                height={24}
+                width={24}
+                onClick={() => toggleButton(item.id)}
+              />
+              <Image
+                src="icons/close.svg"
+                className={activeId === item.id ? "close" : "hidden"}
+                alt="close icon"
+                height={24}
+                width={24}
+                onClick={closeToggle}
+              />
             </div>
+            <div className="question-header">{item.question}</div>
             <div
               className={`faq-answer ${
                 activeId === item.id ? "show" : "hidden"

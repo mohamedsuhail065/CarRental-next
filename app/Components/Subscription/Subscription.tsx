@@ -8,7 +8,7 @@ const Subscription: React.FC = () => {
     phone: string;
   };
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //email checking regular expn
   const regex = /^\d{10}$/;
 
   const [data, setData] = useState<objData>({
@@ -24,9 +24,9 @@ const Subscription: React.FC = () => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
 
-    if (data.name === "" || data.email === "") {
-      setError("Fields must not be empty");
-    } else if (name === "email" && !emailRegex.test(value)) {
+    //checking the email is valid or not
+
+    if (name === "email" && !emailRegex.test(value)) {
       setError("Invalid email format");
     } else {
       setError("");
@@ -42,6 +42,8 @@ const Subscription: React.FC = () => {
       alert("Subscribed");
     }
   };
+
+  //validation for phone number
 
   const phoneSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();

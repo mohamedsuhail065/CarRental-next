@@ -6,6 +6,8 @@ const Header: React.FC = () => {
   const dateInput1Ref = useRef<HTMLInputElement>(null);
   const dateInput2Ref = useRef<HTMLInputElement>(null);
 
+  //manual calender picker
+
   const handleCalImgClick = (inputRef: React.RefObject<HTMLInputElement>) => {
     if (inputRef.current) {
       inputRef.current.focus();
