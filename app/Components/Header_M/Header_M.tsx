@@ -82,11 +82,10 @@ const HeaderMobile: React.FC = () => {
                 width={9}
                 height={12}
               /> */}
-              <input
-                className="loc-ico"
-                type="text"
-                placeholder="Pick-Up Location"
-              />
+             <select className="custom-select">
+                  <option value="alquoz">Al Quoz</option>
+                  <option value="dubai">Dubai</option>
+                </select>
               {/* <Image
                 src="icons/re_map.svg"
                 className="red_cal"
@@ -94,13 +93,10 @@ const HeaderMobile: React.FC = () => {
                 width={9}
                 height={12}
               /> */}
-              <input
-                className="loc-ico"
-                type="text"
-                placeholder="Drop-Off Location"
-                width={9}
-                height={12}
-              />
+             <select className="custom-select">
+                  <option value="alquoz">Al Quoz</option>
+                  <option value="dubai">Dubai</option>
+                </select>
               {/* <Image
                 src="icons/red_calender.svg"
                 alt="Calendar"
